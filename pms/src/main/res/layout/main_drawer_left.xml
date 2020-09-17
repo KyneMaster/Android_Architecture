@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/ic_login_background"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp">
+
+        <com.duobang.middleware.weight.AvatarView
+            android:id="@+id/user_icon_drawer_main"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/user_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="72dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name_drawer_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_triangle_right"
+                android:drawablePadding="3dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/org_name_drawer_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qrcode_drawer_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/text_qrcode"
+            app:srcCompat="@drawable/ic_qrcode" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <TextView
+        android:id="@+id/switch_org_drawer_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_switch_org"
+        android:drawablePadding="24dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="@string/text_switch_org"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/setting_drawer_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_setting"
+        android:drawablePadding="24dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="@string/text_setting"
+        android:textSize="14sp" />
+</LinearLayout>

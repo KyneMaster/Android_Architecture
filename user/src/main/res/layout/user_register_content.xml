@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="27dp"
+    android:layout_marginEnd="27dp"
+    android:layout_marginTop="36dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_account_register"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/user_account"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line_1_register"
+        android:layout_width="1dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="14dp"
+        android:background="#cfcfcf"
+        app:layout_constraintBottom_toBottomOf="@id/tv_account_register"
+        app:layout_constraintStart_toEndOf="@+id/tv_account_register"
+        app:layout_constraintTop_toTopOf="@id/tv_account_register" />
+
+    <EditText
+        android:id="@+id/input_account_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="@null"
+        android:hint="@string/user_login_account_hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_account_register"
+        app:layout_constraintLeft_toRightOf="@id/line_1_register"
+        app:layout_constraintRight_toLeftOf="@id/clear_account_register"
+        app:layout_constraintTop_toTopOf="@id/tv_account_register" />
+
+    <ImageView
+        android:id="@+id/clear_account_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/user_account_clear"
+        app:srcCompat="@drawable/ic_login_edit_clear"
+        app:layout_constraintBottom_toBottomOf="@id/tv_account_register"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_account_register" />
+
+    <View
+        android:id="@+id/line_match_1_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="#cfcfcf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_account_register" />
+
+    <TextView
+        android:id="@+id/phone_tv_register"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_phone"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/line_match_1_register"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/line_2_register"
+        android:layout_width="1dp"
+        android:layout_height="9dp"
+        app:layout_constraintLeft_toRightOf="@id/phone_tv_register"
+        app:layout_constraintTop_toTopOf="@id/phone_tv_register"
+        app:layout_constraintBottom_toBottomOf="@id/phone_tv_register"
+        android:layout_marginStart="14dp"
+        android:background="#cfcfcf"/>
+
+    <TextView
+        android:id="@+id/input_phone_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="@null"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/phone_tv_register"
+        app:layout_constraintLeft_toRightOf="@id/line_2_register"
+        app:layout_constraintTop_toTopOf="@id/phone_tv_register"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/sscode_btn_register"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:text="@string/user_sscode_button"-->
+        <!--android:textSize="9sp"-->
+        <!--android:background="@drawable/user_sscode_button_shape"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:gravity="center"-->
+        <!--app:layout_constraintTop_toTopOf="@id/phone_tv_register"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/phone_tv_register"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--tools:ignore="SmallSp" />-->
+
+    <View
+        android:id="@+id/line_match_2_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="#cfcfcf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_tv_register" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/sscode_tv_register"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/user_sscode"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="14sp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/line_match_2_register"-->
+        <!--android:layout_marginTop="28dp"-->
+        <!--android:layout_marginStart="8dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/line_3_register"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="9dp"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/sscode_tv_register"-->
+        <!--app:layout_constraintTop_toTopOf="@id/sscode_tv_register"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/sscode_tv_register"-->
+        <!--android:layout_marginStart="14dp"-->
+        <!--android:background="#cfcfcf"/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/input_sscode_register"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="14dp"-->
+        <!--android:background="@null"-->
+        <!--android:textSize="14sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@id/sscode_tv_register"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/line_2_register"-->
+        <!--app:layout_constraintTop_toTopOf="@id/sscode_tv_register"-->
+        <!--app:layout_constraintRight_toRightOf="parent"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/line_match_3_register"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="9dp"-->
+        <!--android:background="#cfcfcf"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/sscode_tv_register" />-->
+
+    <TextView
+        android:id="@+id/nickname_tv_register"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_nickname"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/line_match_2_register"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/line_4_register"
+        android:layout_width="1dp"
+        android:layout_height="9dp"
+        app:layout_constraintLeft_toRightOf="@id/nickname_tv_register"
+        app:layout_constraintTop_toTopOf="@id/nickname_tv_register"
+        app:layout_constraintBottom_toBottomOf="@id/nickname_tv_register"
+        android:layout_marginStart="14dp"
+        android:background="#cfcfcf"/>
+
+    <EditText
+        android:id="@+id/input_nickname_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="@null"
+        android:textSize="14sp"
+        android:hint="@string/user_input_nickname_hint"
+        app:layout_constraintBottom_toBottomOf="@id/nickname_tv_register"
+        app:layout_constraintLeft_toRightOf="@id/line_2_register"
+        app:layout_constraintTop_toTopOf="@id/nickname_tv_register"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/line_match_4_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="#cfcfcf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nickname_tv_register" />
+
+    <TextView
+        android:id="@+id/password_tv_register"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_password"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/line_match_4_register"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/line_5_register"
+        android:layout_width="1dp"
+        android:layout_height="9dp"
+        app:layout_constraintLeft_toRightOf="@id/password_tv_register"
+        app:layout_constraintTop_toTopOf="@id/password_tv_register"
+        app:layout_constraintBottom_toBottomOf="@id/password_tv_register"
+        android:layout_marginStart="14dp"
+        android:background="#cfcfcf"/>
+
+    <EditText
+        android:id="@+id/input_password_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:background="@null"
+        android:textSize="14sp"
+        android:hint="@string/user_login_password_hint"
+        app:layout_constraintBottom_toBottomOf="@id/password_tv_register"
+        app:layout_constraintLeft_toRightOf="@id/line_4_register"
+        app:layout_constraintTop_toTopOf="@id/password_tv_register"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <View
+        android:id="@+id/line_match_5_register"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="#cfcfcf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_tv_register" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

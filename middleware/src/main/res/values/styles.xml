@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyMatissePopup" parent="Popup.Dracula">
+        <item name="android:popupBackground">@color/blackTitle</item>
+    </style>
+
+    <style name="MyMatisse" parent="Matisse.Dracula">
+        <item name="colorPrimary">@color/blackTitle</item>
+        <item name="colorPrimaryDark">@color/blackTitle</item>
+        <item name="toolbar">@color/blackTitle</item>
+        <item name="page.bg">@color/blackSurface</item>
+        <item name="bottomToolbar.bg">@color/blackTitle</item>
+        <item name="listPopupWindowStyle">@style/MyMatissePopup</item>
+    </style>
+</resources>

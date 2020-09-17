@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".contacts.ContactsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:id="@+id/back_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@string/text_contacts"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/search_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="12dp"
+                app:srcCompat="@drawable/ic_search" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <TextView
+            android:id="@+id/friend_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_friend"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:text="@string/text_my_friend"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginStart="40dp"-->
+            <!--android:background="@color/grey_background" />-->
+
+        <TextView
+            android:id="@+id/org_group_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_org_group"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:text="@string/text_my_org_group"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginStart="40dp"-->
+            <!--android:background="@color/grey_background" />-->
+
+        <TextView
+            android:id="@+id/org_structure_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_org"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:text="@string/text_org_structure"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#EDF0F4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/text_top_contacts"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_top_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

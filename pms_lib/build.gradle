@@ -1,0 +1,94 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            // 兼容webView问题
+            abiFilters "armeabi"
+            abiFilters "x86"
+            abiFilters "armeabi-v7a"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        vectorDrawables.useSupportLibrary = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies.appcompat
+    implementation rootProject.ext.dependencies.material
+    implementation rootProject.ext.dependencies.vector
+    implementation rootProject.ext.dependencies.supportV4
+    testImplementation 'junit:junit:4.12'
+    //network
+    api rootProject.ext.dependencies.okhttp
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.retrofitConvGson
+    api rootProject.ext.dependencies.retrofitRxAdapter
+    api rootProject.ext.dependencies.fastjson
+    //rx
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    api rootProject.ext.dependencies.rxjava
+    api rootProject.ext.dependencies.rxandroid
+    api rootProject.ext.dependencies.rxlifecycle
+    api 'com.f2prateek.rx.preferences2:rx-preferences:2.0.0-RC3'
+    //gson
+    api rootProject.ext.dependencies.gson
+    //glide
+    api rootProject.ext.dependencies.glide
+    annotationProcessor rootProject.ext.annotationProcessors.glide
+    //图片上传选择
+    api rootProject.ext.dependencies.matisse
+    api rootProject.ext.dependencies.luban
+    //sentry 崩溃收集
+    api rootProject.ext.dependencies.sentry
+    // MMKV
+    api rootProject.ext.dependencies.mmkv
+    //ARouter
+    api(rootProject.ext.dependencies.arouter, {
+        exclude group: 'com.android.support'
+    })
+    // multidex
+    api rootProject.ext.dependencies.multidex
+    // constraint
+    api rootProject.ext.dependencies.constraint
+    // daimajia Animation
+    api rootProject.ext.dependencies.animEasing
+    api rootProject.ext.dependencies.androidAnimations
+    // aspects
+    api rootProject.ext.dependencies.aspects
+    // photoView
+    api rootProject.ext.dependencies.photoView
+    // floatingActionButton
+    api rootProject.ext.dependencies.floatingActionButton
+    // MPAndroidChart
+    api rootProject.ext.dependencies.MPAndroidChart
+    // update
+    api rootProject.ext.dependencies.update
+
+}

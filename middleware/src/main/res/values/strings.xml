@@ -1,0 +1,7 @@
+<resources>
+    <string name="text_new_comment">新建评论</string>
+    <string name="text_commit">发表</string>
+    <string name="text_input_hint">在此输入文字...</string>
+    <string name="text_upload_photo">上传图片</string>
+    <string name="text_hint_search">搜索联系人</string>
+</resources>

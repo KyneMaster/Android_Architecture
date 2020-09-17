@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/fiil_dialog_white_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建会议"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/input_name_create_meeting_dialog"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fill_stroke_background"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:hint="会议名称*"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fill_stroke_background"
+            android:layout_marginTop="12dp">
+            <Spinner
+                android:id="@+id/type_create_meeting_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="5dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_background_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/cancel_create_meeting_dialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="@color/darksalmon"
+            android:gravity="center"
+            android:padding="12dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_background_dark"/>
+
+        <TextView
+            android:id="@+id/ok_create_meeting_dialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="提交"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="12dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context=".login.SSCodeHelperActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="24dp">
+
+        <ImageView
+            android:id="@+id/close_sscode_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back_black"
+            android:padding="12dp"
+            android:contentDescription="@string/user_close" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_menu_blue"
+            android:layout_gravity="end"
+            android:padding="12dp"
+            android:contentDescription="@string/user_menu" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_maker"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机收不到验证码如何操作？"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginStart="24dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e4e4e4"
+            android:layout_marginTop="48dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:text="您好，手机收不到验证码，可以尝试使用账号密码方式登陆应用。\n
+\n若仍无法解决，请按如下方法排查：\n
+\na.手机安全软件是否拦截；\n
+\nb.收件箱过满或手机内存不够，清空后重启重新尝试；\n
+\nc.所处地区信号不好或接收短信的时间点手机处于关机状态；\n
+\nd.双卡双待手机，AB卡槽是否正确安放（可尝试更换AB卡位置重试）；\n
+\ne.长时间未关机，可尝试关机重启后重新尝试\n
+\nf.手机欠费/停机\n
+\ng.如是在第三方应用或自建应用的自定义页面获取验证码时手机收不到验证码，则可能是应用功能异常导致没有下发成功，需要联系企业管理员确认或者联系第三方应用管理员确认功能是否正常。"
+            android:layout_marginTop="48dp"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

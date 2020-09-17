@@ -1,0 +1,5 @@
+include ':pms', ':pms_lib', ':user', ':middleware', ':Libraries'
+if (!IsModule.toBoolean()) {
+    include ':pms'
+}
+rootProject.name = "Duobang_Android_Architecture"

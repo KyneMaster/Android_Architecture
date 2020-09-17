@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.duobang.middleware">
+
+    <application
+        android:name=".PMSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/DuobangTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <!-- 适配全面屏 -->
+        <activity
+            android:name=".activity.PhotoReviewActivity"
+            android:theme="@style/BlackAppTheme" /> <!-- 适配华为(hua wei)刘海屏 -->
+        <activity android:name=".activity.CommentActivity" /> <!-- 适配小米(xiao mi)刘海屏 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.duobang.pms.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+该module意为中间件。
+
+    pms      user        workbench
+     |        |             |
+      ————  middleware —————
+              |
+             lib
+
+相当于在对lib的使用上，增加一层。这样的话，有些公用性的操作，暂时现在在middleware中处理，对lib逐渐完善，不轻易对lib层改动。
+
+包结构：
+
+- activity 基本是对BaseLibActivity的二次包装，可以分为很多种类，比如滑动返回activity，主页面activity等
+
+- cache 缓存类
+
+- constant 常量区域
+
+- fragment 同activity
+
+- router router类，包含整个app主页面跳转神经网
+
+- session
+
+- weight 自定义组件，但凡能公共用到的
+
+- i

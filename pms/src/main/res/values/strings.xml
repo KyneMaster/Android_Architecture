@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kyne_Android_Architecture</string>
+    <string name="user_icon">头像</string>
+    <string name="text_qrcode">二维码</string>
+    <string name="text_star_project">星标工程</string>
+    <string name="project_show">展示</string>
+    <string name="text_fold_icon">收缩图标</string>
+    <string name="text_bridge">桥梁</string>
+    <string name="text_switch_org">切换组织</string>
+    <string name="text_setting">设置</string>
+    <string name="text_logout">退出登录</string>
+</resources>

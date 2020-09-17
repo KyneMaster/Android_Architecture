@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_background"
+    android:orientation="vertical"
+    tools:context=".register.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/close_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/user_close"
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_login_close" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/user_perfect_info"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <include layout="@layout/user_register_content" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/user_fillet_login_button"
+        android:text="@string/user_finish"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

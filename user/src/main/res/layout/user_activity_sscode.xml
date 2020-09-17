@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.SSCodeActivity">
+
+    <ImageView
+        android:id="@+id/back_sscode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back_black"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:contentDescription="@string/back" />
+
+    <TextView
+        android:id="@+id/tip_sscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/user_sscode_send_success"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="29dp"/>
+
+    <TextView
+        android:id="@+id/phone_sscode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/linkable_text"
+        android:textSize="20sp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/activate_tip_sscode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_sscode_activate_tip"
+        android:textSize="12sp"
+        android:textColor="@color/orange"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="29dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:text="@string/user_sscode_hint"
+            />
+        <TextView
+            android:id="@+id/help_sscode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/user_sscode_help"
+            android:textColor="@color/linkable_text"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <com.duobang.middleware.weight.SSCodeInputView
+        android:id="@+id/input_sscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp">
+
+    </com.duobang.middleware.weight.SSCodeInputView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_sscode_tip"/>
+
+    <TextView
+        android:id="@+id/resend_sscode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:text="@string/user_sscode_resend"
+        android:gravity="center_vertical"
+        android:textColor="@color/linkable_text"
+        android:textSize="12sp"
+        android:drawablePadding="6dp"/>
+
+</LinearLayout>
