@@ -2,7 +2,7 @@
 
 ### 更换组件化开发 2020-04-16
 
-<img src="./readme/结构关系.png"  height="300" width="150">
+<img src="./readme/结构关系.png">
 
  1. pms作为主模块，依赖其他所有模块，其他模块在运行时为library.
  2. 其他模块，主要依赖middleware，而对应公用性的代码，放到middleware模块下。
@@ -74,28 +74,3 @@
 1. Gradle配置
     - 在dependencies.gradle中统一配置
     - 公用性的依赖，可以使用api
-
-### 业务流程
-
-1. 登录
-<img src="./readme/login.png"  height="300" width="150">
-
-2. 权限
-    - 管理员
-        - 有默认项目，隐藏工程模块
-        - 可以在个人中心切换项目
-    - 操作员
-        - 默认项目
-        - 不能切换
-    - 无权限
-        - 空白页面
-        - 输入邀请码
-
-3. 主结构
-    - 消息、概览、工程、工作台、联系人
-    - 个人中心测滑
-
-### 开发文档
-1. 接口文档遵循Swagger，包括接口测试、数据格式等
-2. 开发计划文档 《幕布》https://mubu.com/doc/4GobonPD2G7
-3. 开发逻辑文档 暂时添加到README.md
